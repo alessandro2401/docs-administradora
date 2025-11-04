@@ -13,6 +13,7 @@ export default defineConfig({
       { text: 'APIs', link: '/apis/' },
       { text: 'Processos', link: '/processos/' },
       { text: 'Identidade Visual', link: '/identidade-visual/' },
+      { text: 'Suporte', link: '/suporte/' },
     ],
     sidebar: {
       '/sites-publicos/': [
@@ -80,6 +81,14 @@ export default defineConfig({
             { text: 'Manual da Marca Completo', link: '/identidade-visual/manual-completo' },
             { text: 'Downloads', link: '/identidade-visual/downloads' },
             { text: 'Exemplos de Aplicação', link: '/identidade-visual/exemplos' },
+          ]
+        }
+      ],
+      '/suporte/': [
+        {
+          text: 'Suporte',
+          items: [
+            { text: 'Contatos e FAQ', link: '/suporte/' },
           ]
         }
       ],
