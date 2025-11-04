@@ -12,15 +12,15 @@ Para cada site, você encontrará:
 ## Sites Documentados
 
 ### 🌐 Site Institucional
-- [Documentação Geral](/sites-publicos/institucional)
-- [Stack Técnica](/sites-publicos/institucional-tech)
+- [Documentação Geral](./institucional)
+- [Stack Técnica](./institucional-tech)
 
 ### 🏢 AURA Seguradora (S4)
-- [Documentação Geral](/sites-publicos/aura-s4)
-- [Stack Técnica](/sites-publicos/aura-s4-tech)
+- [Documentação Geral](./aura-s4)
+- [Stack Técnica](./aura-s4-tech)
 
 ### 📋 Gestão Segura
-- [Documentação Geral](/sites-publicos/gestao-segura)
+- [Documentação Geral](./gestao-segura)
 
 ### 🎨 Manual da Marca
-- [Documentação Geral](/sites-publicos/manual-marca)
+- [Documentação Geral](./manual-marca)
