@@ -25,7 +25,13 @@ export default defineConfig({
             { text: 'AURA Seguradora (S4)', link: '/sites-publicos/aura-s4' },
             { text: '↳ Stack Técnica', link: '/sites-publicos/aura-s4-tech' },
             { text: 'Gestão Segura', link: '/sites-publicos/gestao-segura' },
+            { text: '↳ Stack Técnica', link: '/sites-publicos/gestao-segura-tech' },
             { text: 'Manual da Marca', link: '/sites-publicos/manual-marca' },
+            { text: '↳ Stack Técnica', link: '/sites-publicos/manual-marca-tech' },
+            { text: 'Calculadora SMA', link: '/sites-publicos/calculadora-sma-tech' },
+            { text: 'Calculadora SMT', link: '/sites-publicos/calculadora-smt-tech' },
+            { text: 'Portal de Sistemas', link: '/sites-publicos/portal-sistemas-tech' },
+            { text: 'Gerador de Assinaturas', link: '/sites-publicos/gerador-assinaturas-tech' },
           ]
         }
       ],
