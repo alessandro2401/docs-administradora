@@ -21,7 +21,9 @@ export default defineConfig({
           text: 'Sites Públicos',
           items: [
             { text: 'Site Institucional', link: '/sites-publicos/institucional' },
+            { text: '↳ Stack Técnica', link: '/sites-publicos/institucional-tech' },
             { text: 'AURA Seguradora (S4)', link: '/sites-publicos/aura-s4' },
+            { text: '↳ Stack Técnica', link: '/sites-publicos/aura-s4-tech' },
             { text: 'Gestão Segura', link: '/sites-publicos/gestao-segura' },
             { text: 'Manual da Marca', link: '/sites-publicos/manual-marca' },
           ]
