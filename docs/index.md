@@ -65,7 +65,7 @@ Facilitar o acesso à informação, melhorar o onboarding de novos colaboradores
 
 ### 🔄 Sincronização Automática
 
-Este portal utiliza webhooks do GitHub para detectar automaticamente alterações nos sites e atualizar a documentação correspondente. Toda mudança nos repositórios é registrada no [changelog](/changelog) com timestamp e autor.
+Este portal utiliza webhooks do GitHub para detectar automaticamente alterações nos sites e atualizar a documentação correspondente. Toda mudança nos repositórios é registrada automaticamente com timestamp e autor.
 
 ### 📚 Como Usar
 
