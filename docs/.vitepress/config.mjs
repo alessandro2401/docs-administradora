@@ -40,6 +40,7 @@ export default defineConfig({
           text: 'Calculadoras',
           items: [
             { text: 'SMA - Socorro Mútuo Acordo', link: '/calculadoras/sma' },
+            { text: '↳ Nova Funcionalidade', link: '/calculadoras/sma-nova-funcionalidade' },
             { text: 'SMT - Socorro Mútuo Total', link: '/calculadoras/smt' },
           ]
         }
