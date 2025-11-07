@@ -352,6 +352,58 @@ Exibe informações temporais importantes para o cálculo:
 | Tempo de Geração | ~10 segundos | ✅ Aceitável |
 | Compatibilidade | Multi-plataforma | ✅ Universal |
 
+## Integração com Planilha Google Sheets
+
+### Colunas de Contraproposta
+
+A planilha Google Sheets da Calculadora SMA (aba "SMA") possui três colunas dedicadas ao registro de contrapropostas e seus limites de validação:
+
+#### Estrutura das Colunas
+
+| Coluna | Nome | Descrição | Formato |
+|--------|------|-----------|--------|
+| **I** | Valor da Contraproposta (R$) | Valor proposto pelo associado para o acordo | Monetário (R$) |
+| **J** | Valor Mínimo da Contraproposta (R$) | Limite inferior aceito (100% do acordo) | Monetário (R$) |
+| **K** | Valor Máximo da Contraproposta (R$) | Limite superior aceito (112% do acordo) | Monetário (R$) |
+
+#### Funcionalidade
+
+Essas colunas trabalham em conjunto com a lógica de validação implementada na Calculadora SMA:
+
+1. **Coluna I** registra o valor da contraproposta inserida pelo usuário
+2. **Coluna J** armazena o limite mínimo calculado (valor do acordo em dinheiro)
+3. **Coluna K** armazena o limite máximo calculado (valor do acordo × 1.12)
+
+#### Validação Automática
+
+O sistema valida automaticamente se:
+
+```javascript
+Valor da Contraproposta >= Valor Mínimo && 
+Valor da Contraproposta <= Valor Máximo
+```
+
+**Exemplo de Registro:**
+
+| Valor da Contraproposta | Valor Mínimo | Valor Máximo | Status |
+|------------------------|--------------|--------------|--------|
+| R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | ✅ APROVADA |
+| R$ 11.000,00 | R$ 10.125,00 | R$ 11.340,00 | ✅ APROVADA |
+| R$ 12.000,00 | R$ 10.125,00 | R$ 11.340,00 | ❌ REPROVADA |
+
+#### Acesso à Planilha
+
+- **URL:** [Planilha de Registro de Cálculos](https://docs.google.com/spreadsheets/d/1gRL6ox-HvlSHWpPwCt76svv2hxnnY9099HgEQ8Zekm0/edit)
+- **Aba:** SMA
+- **Colunas:** I, J, K
+
+#### Benefícios
+
+- **Rastreabilidade:** Histórico completo de todas as contrapropostas
+- **Auditoria:** Limites de validação registrados para cada caso
+- **Análise:** Dados estruturados para relatórios e estatísticas
+- **Transparência:** Critérios de aprovação/rejeição documentados
+
 ## Próximos Passos
 
 ### Melhorias de UX
