@@ -450,3 +450,94 @@ Com **100% de sucesso** em todos os testes realizados e **17/17 verificações**
 **Versão:** 2.0.0  
 **Autor:** Equipe de Desenvolvimento - Administradora Mutual  
 **Status:** ✅ **100% Funcional e em Produção**
+
+
+## Correção Técnica: Mapeamento de Colunas na Planilha Google Sheets
+
+**Data da Correção:** 07/11/2025
+
+### Problema Identificado
+
+Durante a integração com a planilha Google Sheets, foi identificado que os valores de contraproposta e seus limites (mínimo e máximo) estavam sendo registrados nas **colunas incorretas**, causando inconsistência nos dados armazenados.
+
+**Mapeamento Incorreto (Antes da Correção):**
+
+- **Coluna I:** Valor da Contraproposta ✅ (correto)
+- **Coluna J:** Dias para Reparação ❌ (deveria ser Valor Mínimo da Contraproposta)
+- **Coluna K:** Dias de Carro Reserva ❌ (deveria ser Valor Máximo da Contraproposta)
+
+### Solução Implementada
+
+O código de integração foi corrigido em dois pontos:
+
+#### 1. Frontend (sma-site)
+
+Adicionado envio dos limites mínimo e máximo calculados pela validação:
+
+```javascript
+const dadosAPI = {
+    // ... outros campos ...
+    valorContraproposta: dadosEntrada.contraproposta || 0,
+    valorMinimoContraproposta: resultado.validacao_contraproposta?.limiteMin || 0,  // ⭐ NOVO
+    valorMaximoContraproposta: resultado.validacao_contraproposta?.limiteMax || 0,  // ⭐ NOVO
+    diasReparacao: dadosEntrada.dias_reparo || 0,
+    // ... outros campos ...
+};
+```
+
+#### 2. Backend (API)
+
+Corrigido o mapeamento das colunas no arquivo `api/registrar-calculo-sma.js`:
+
+```javascript
+const linha = [
+    timestamp,                                   // A: Timestamp
+    dados.nomeBeneficiario || '',               // B: Nome do Beneficiário
+    dados.placaVeiculo || '',                   // C: Placa do Veículo
+    dados.modeloVeiculo || '',                  // D: Modelo do Veículo
+    dados.dataAberturaSinistro || '',           // E: Data da Abertura
+    dados.valorRegulagem || 0,                  // F: Valor da Regulagem
+    dados.valorParticipacao || 0,               // G: Valor da Participação/Franquia
+    dados.orcamentoOficina || 0,                // H: Orçamento Oficina/CILIA
+    dados.valorContraproposta || 0,             // I: Valor da Contraproposta ⭐
+    dados.valorMinimoContraproposta || 0,       // J: Valor Mínimo da Contraproposta ⭐
+    dados.valorMaximoContraproposta || 0,       // K: Valor Máximo da Contraproposta ⭐
+    dados.diasReparacao || 0,                   // L: Dias para Reparação (movido de J)
+    dados.diasCarroReserva || 0,                // M: Dias de Carro Reserva (movido de K)
+    // ... demais colunas deslocadas em 2 posições ...
+];
+```
+
+### Estrutura Final das Colunas I, J, K
+
+| Coluna | Nome | Descrição | Origem |
+|--------|------|-----------|--------|
+| **I** | Valor da Contraproposta (R$) | Valor proposto pelo associado | Formulário (input do usuário) |
+| **J** | Valor Mínimo da Contraproposta (R$) | Limite inferior (100% do acordo) | Calculado automaticamente |
+| **K** | Valor Máximo da Contraproposta (R$) | Limite superior (112% do acordo) | Calculado automaticamente |
+
+### Benefícios da Correção
+
+1. **Rastreabilidade Completa:** Todos os valores relacionados à contraproposta (valor proposto + limites) são registrados corretamente
+2. **Auditoria Facilitada:** Possibilidade de analisar histórico de contrapropostas e verificar se estavam dentro dos limites permitidos
+3. **Análise de Dados:** Permite criar relatórios e dashboards sobre padrões de contrapropostas
+4. **Integridade dos Dados:** Garante que os dados armazenados correspondem exatamente ao que foi calculado e exibido ao usuário
+
+### Exemplo de Registro
+
+Para um cálculo com os seguintes valores:
+- Valor do Acordo em Dinheiro: R$ 10.125,00
+- Contraproposta do Associado: R$ 11.000,00
+
+Os valores registrados seriam:
+- **Coluna I:** R$ 11.000,00 (valor proposto)
+- **Coluna J:** R$ 10.125,00 (limite mínimo = 100%)
+- **Coluna K:** R$ 11.340,00 (limite máximo = 112%)
+- **Status:** ✅ APROVADA (108,6% do valor do acordo)
+
+### Repositórios Atualizados
+
+- **Frontend:** [alessandro2401/sma-site](https://github.com/alessandro2401/sma-site) - Commit `aed3dee`
+- **Backend:** [alessandro2401/api-calculadoras-sheets](https://github.com/alessandro2401/api-calculadoras-sheets) - Commit `c373b9e`
+
+---
