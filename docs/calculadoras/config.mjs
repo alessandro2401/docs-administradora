@@ -41,6 +41,7 @@ export default defineConfig({
             { text: '↳ Stack Técnica', link: '/calculadoras/sma-tech' },
             { text: '↳ Nova Funcionalidade', link: '/calculadoras/sma-nova-funcionalidade' },
             { text: '↳ Melhorias 2025', link: '/calculadoras/sma-melhorias-2025' },
+            { text: '↳ Integração Google Sheets', link: '/calculadoras/sma-integracao-sheets' },
             { text: 'SMT - Socorro Mútuo Total', link: '/calculadoras/smt' },
             { text: '↳ Stack Técnica', link: '/calculadoras/smt-tech' },
           ]
