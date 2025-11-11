@@ -44,6 +44,8 @@ export default defineConfig({
             { text: '↳ Integração Google Sheets', link: '/calculadoras/sma-integracao-sheets' },
             { text: 'SMT - Socorro Mútuo Total', link: '/calculadoras/smt' },
             { text: '↳ Stack Técnica', link: '/calculadoras/smt-tech' },
+            { text: '↳ Integração Google Sheets', link: '/calculadoras/smt-integracao-sheets' },
+            { text: '↳ Correções - Novembro 2025', link: '/calculadoras/smt-correcoes-nov-2025' },
           ]
         }
       ],
