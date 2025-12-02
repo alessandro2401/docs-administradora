@@ -89,4 +89,4 @@ O `tailwind-merge` e `clsx` são utilizados para gerenciar classes CSS de forma 
 
 ---
 
-*Última atualização: 03 de Novembro de 2025*
+*Última atualização: 02 de Dezembro de 2025*

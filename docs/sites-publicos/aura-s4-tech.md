@@ -93,4 +93,4 @@ Esse padrão garante formulários seguros, eficientes e com excelente experiênc
 
 ---
 
-*Última atualização: 03 de Novembro de 2025*
+*Última atualização: 02 de Dezembro de 2025*

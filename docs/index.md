@@ -88,6 +88,6 @@ Este portal utiliza webhooks do GitHub para detectar automaticamente alteraçõe
 
 ---
 
-**Última atualização:** 03 de Novembro de 2025  
+**Última atualização:** 02 de Dezembro de 2025  
 **Versão:** 1.0.0  
 **Mantido por:** Equipe Técnica da Administradora Mutual

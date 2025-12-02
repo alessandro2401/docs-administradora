@@ -16,6 +16,12 @@ Análise completa da calculadora sma.administradoramutual.com.br.
 
 ### Saídas
 
-- Cálculo de valores
-- Impressão
-- Geração de PDF
+- Cálculo de valores detalhado
+- **Impressão** - Botão para imprimir resultado
+- **Geração de PDF** - Exportar resultado em PDF
+
+### Integrações
+
+- **Google Sheets API** - Armazena dados dos cálculos automaticamente
+- **API Backend (Vercel)** - Processa e salva os dados
+- Ver documentação completa em [APIs e Integrações](/apis/)

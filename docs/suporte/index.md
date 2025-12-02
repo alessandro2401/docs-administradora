@@ -101,5 +101,5 @@ Para solicitar acesso a sistemas internos, preencha as informações abaixo e en
 
 ---
 
-**Última atualização:** 03 de Novembro de 2025  
+**Última atualização:** 02 de Dezembro de 2025  
 **Versão da Documentação:** 1.0.0
