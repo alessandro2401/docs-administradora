@@ -124,7 +124,7 @@ Tanto o **PDF** quanto a **Impressão** agora contêm **4 seções completas**:
 
 - [Calculadora SMT](https://total.administradoramutual.com.br/)
 - [Repositório GitHub](https://github.com/alessandro2401/total-site)
-- [Integração Google Sheets](./smt-integracao-sheets.md)
+- [Integração Google Sheets](../apis/google-sheets.md)
 
 ---
 
