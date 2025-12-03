@@ -14,35 +14,43 @@ hero:
       link: https://github.com/alessandro2401/docs-administradora
 
 features:
-  - icon: 🌐
+  - icon:
+      src: /icons/globe.svg
     title: Sites Públicos
     details: Documentação completa de todos os sites públicos da Administradora Mutual
     link: /sites-publicos/
-  - icon: 🧮
+  - icon:
+      src: /icons/calculator.svg
     title: Calculadoras
     details: Guias de uso das calculadoras SMA e SMT do Movimento Mais Brasil
     link: /calculadoras/
-  - icon: 🔒
+  - icon:
+      src: /icons/lock.svg
     title: Sistemas Internos
     details: Documentação dos sistemas internos e ferramentas corporativas
     link: /sistemas-internos/
-  - icon: 🛠️
+  - icon:
+      src: /icons/wrench.svg
     title: Ferramentas
     details: Guias de uso das ferramentas internas como gerador de assinaturas
     link: /ferramentas/
-  - icon: 🔌
+  - icon:
+      src: /icons/plug.svg
     title: APIs
     details: Documentação técnica das APIs e integrações utilizadas
     link: /apis/
-  - icon: 📋
+  - icon:
+      src: /icons/clipboard-list.svg
     title: Processos
     details: Procedimentos Operacionais Padrão (POPs) e fluxos de trabalho
     link: /processos/
-  - icon: 🎨
+  - icon:
+      src: /icons/palette.svg
     title: Identidade Visual
     details: Manual da marca completo, downloads e exemplos de aplicação
     link: /identidade-visual/
-  - icon: ❓
+  - icon:
+      src: /icons/help-circle.svg
     title: Suporte
     details: FAQ, contatos e solicitação de acesso aos sistemas
     link: /suporte/
