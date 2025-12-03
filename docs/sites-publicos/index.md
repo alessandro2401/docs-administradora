@@ -24,3 +24,7 @@ Para cada site, você encontrará:
 
 ### 🎨 Manual da Marca
 - [Documentação Geral](./manual-marca)
+
+### 🏛️ Grupo MMB
+- [Documentação Geral](./grupo-mmb)
+- [Stack Técnica](./grupo-mmb-tech)
