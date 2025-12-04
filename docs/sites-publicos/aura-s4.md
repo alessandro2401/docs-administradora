@@ -6,7 +6,91 @@ Site institucional e técnico da AURA Seguradora S/A - s4.administradoramutual.c
 
 - **URL:** https://s4.administradoramutual.com.br/
 - **Status:** ✅ Ativo e funcional
-- **Última atualização:** 04 de Dezembro de 2024 - Melhorias de UX, SEO e padronização visual
+- **Última atualização:** 04 de Dezembro de 2024 - Nova identidade visual AURA implementada
+
+---
+
+## Nova Identidade Visual AURA (04/Dez/2024)
+
+### Conceito: "Presença que Protege"
+
+A identidade visual da AURA Seguradora foi completamente reformulada para criar uma "aura de proteção" ao redor do cliente, transmitindo segurança, atenção constante e movimento ativo.
+
+**Valores Fundamentais:**
+- **Atenção:** Foco constante nas necessidades do segurado
+- **Cobertura:** Proteção ampla e abrangente
+- **Movimento Constante:** Resposta rápida e presença ativa
+
+### Paleta de Cores
+
+| Cor | HEX | RGB | Uso |
+|-----|-----|-----|-----|
+| **Azul AURA** (Primária) | `#3B82F6` | `59, 130, 246` | Principal, gradientes |
+| **Ciano AURA** (Primária) | `#06B6D4` | `6, 182, 212` | Gradientes, destaques |
+| **Azul Profundo** (Apoio) | `#0F172A` | `15, 23, 42` | Fundos escuros, contraste |
+| **Branco** (Neutra) | `#FFFFFF` | `255, 255, 255` | Fundos claros, textos |
+| **Cinza Claro** (Texto) | `#CBD5E1` | `203, 213, 225` | Textos secundários |
+
+**Gradiente Principal:** Linear Azul AURA (#3B82F6) → Ciano AURA (#06B6D4)
+
+### Tipografia
+
+- **Fonte Principal:** Inter (Google Fonts)
+- **Pesos utilizados:** 300 (Light), 400 (Regular), 600 (Semibold), 700 (Bold)
+- **Logotipo AURA:** Inter Bold (700) + letter-spacing +200
+- **Logotipo "SEGURADORA":** Inter Light (300) + letter-spacing +400
+
+### Logos
+
+**6 versões SVG disponíveis:**
+1. `aura_horizontal_colorida.svg` - Principal (gradiente azul → ciano)
+2. `aura_horizontal_branca.svg` - Fundos escuros
+3. `aura_horizontal_negativa.svg` - Branco sobre azul profundo
+4. `aura_vertical_colorida.svg` - Perfis de redes sociais
+5. `aura_vertical_branca.svg` - Fundos escuros verticais
+6. `aura_vertical_negativa.svg` - Branco sobre azul profundo vertical
+
+**Localização:** `/public/logos/aura/`
+
+**Regras de aplicação:**
+- Versão horizontal = primária
+- Versão vertical = secundária (espaços limitados)
+- Área de proteção = 2x largura do círculo central
+- Tamanho mínimo impressão = 2cm
+- Tamanho mínimo digital = 80px
+
+### Simbolismo
+
+O símbolo da AURA é composto por ondas concêntricas que emanam de um núcleo central:
+- **Núcleo Central:** Representa o cliente no centro da proteção
+- **Ondas Concêntricas:** Simbolizam as camadas de proteção e cobertura
+- **Movimento:** As ondas transmitem dinamismo e presença ativa
+- **Gradiente:** Azul → Ciano representa tecnologia e modernidade
+
+### Manual da Marca
+
+**URL:** https://marca.administradoramutual.com.br (aba "AURA Seguradora")
+
+**Conteúdo do manual:**
+- Conceito e filosofia da marca
+- Paleta de cores completa com códigos
+- Tipografia e hierarquia
+- Versões de logos e regras de aplicação
+- Guia de aplicações (digital, impresso, redes sociais)
+- Elementos gráficos de apoio
+- Área de downloads (6 logos SVG)
+- Contato: branding@auraseguradora.com.br
+
+### Implementação no Site
+
+**Alterações realizadas:**
+1. ✅ Logo AURA SVG no Header (substituiu texto)
+2. ✅ Paleta de cores atualizada no `tailwind.config.ts`
+3. ✅ Fonte Inter implementada no `layout.tsx` e `globals.css`
+4. ✅ Gradiente hero atualizado: Azul AURA → Ciano AURA
+5. ✅ 6 logos SVG copiados para `/public/logos/aura/`
+
+**Commit:** `feat: Implementar nova identidade visual AURA (logos SVG, cores #3B82F6/#06B6D4, fonte Inter, gradiente azul→ciano)`
 
 ---
 
