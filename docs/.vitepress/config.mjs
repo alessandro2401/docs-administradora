@@ -15,6 +15,7 @@ export default defineConfig({
       { text: 'Processos', link: '/processos/' },
       { text: 'Identidade Visual', link: '/identidade-visual/' },
       { text: 'Suporte', link: '/suporte/' },
+      { text: 'POTERE Locadora', link: '/potere-locadora/' },
     ],
     sidebar: {
       '/sites-publicos/': [
@@ -99,6 +100,15 @@ export default defineConfig({
           text: 'Suporte',
           items: [
             { text: 'Contatos e FAQ', link: '/suporte/' },
+          ]
+        }
+      ],
+      '/potere-locadora/': [
+        {
+          text: 'POTERE - Aluguéis Ativos',
+          items: [
+            { text: 'Visão Geral', link: '/potere-locadora/' },
+            { text: 'Documentação Técnica', link: '/potere-locadora/tech' },
           ]
         }
       ],
