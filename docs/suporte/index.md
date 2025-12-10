@@ -30,7 +30,7 @@ Envie um email para suporte@administradoramutual.com.br com:
 
 Abra uma issue no [repositório do GitHub](https://github.com/alessandro2401/docs-administradora/issues) ou envie um email para suporte@administradoramutual.com.br.
 
-## 🔄 Sincronização Automática
+## <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg> Sincronização Automática
 
 Este portal utiliza um sistema de sincronização automática que monitora alterações nos repositórios dos sites e atualiza a documentação correspondente.
 
@@ -54,8 +54,8 @@ Este portal utiliza um sistema de sincronização automática que monitora alter
 
 ### Status da Sincronização
 
-✅ **Ativo** - Sistema de sincronização operacional  
-📊 **Última sincronização:** Verificar logs do sistema  
+<svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Ativo** - Sistema de sincronização operacional  
+<svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> **Última sincronização:** Verificar logs do sistema  
 🔔 **Webhooks configurados:** 8 repositórios
 
 ## 📝 Solicitação de Acesso

@@ -197,24 +197,24 @@ Content-Type: application/json
 
 ### Status da Integração
 
-✅ **Totalmente funcional e validado em produção**
+<svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Totalmente funcional e validado em produção**
 
 ### Testes Realizados
 
 **Teste 1: Validação com Contraproposta**
-- ✅ Registro gravado corretamente
-- ✅ Colunas I, J, K preenchidas com valores calculados
-- ✅ Limites matemáticos validados (100% e 112%)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Registro gravado corretamente
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Colunas I, J, K preenchidas com valores calculados
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Limites matemáticos validados (100% e 112%)
 
 **Teste 2: Validação sem Contraproposta**
-- ✅ Registro gravado corretamente
-- ✅ Colunas I, J, K preenchidas com valor 0
-- ✅ Todas as 33 colunas preenchidas
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Registro gravado corretamente
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Colunas I, J, K preenchidas com valor 0
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Todas as 33 colunas preenchidas
 
 **Teste 3: Validação End-to-End**
-- ✅ Fluxo completo frontend → API → Google Sheets
-- ✅ Tempo de resposta: 3-5 segundos
-- ✅ Dados íntegros e completos
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Fluxo completo frontend → API → Google Sheets
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Tempo de resposta: 3-5 segundos
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dados íntegros e completos
 
 ### Histórico de Correções
 

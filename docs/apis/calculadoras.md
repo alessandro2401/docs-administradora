@@ -273,16 +273,16 @@ A API utiliza a Google Sheets API para armazenar os dados dos cálculos. Veja a 
 ## Changelog
 
 ### 2025-11-25
-- ✅ Correção do botão "Imprimir" na Calculadora SMT
-- ✅ Implementação de nova abordagem usando `@media print`
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Correção do botão "Imprimir" na Calculadora SMT
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Implementação de nova abordagem usando `@media print`
 
 ### 2025-11-24
-- ✅ Integração com Google Sheets funcionando
-- ✅ Testes realizados com sucesso para SMA e SMT
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Integração com Google Sheets funcionando
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Testes realizados com sucesso para SMA e SMT
 
 ### 2025-11-03
 - 🎉 Lançamento inicial da API
-- ✅ Endpoints `/api/registrar-calculo-sma` e `/api/registrar-calculo-smt` criados
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Endpoints `/api/registrar-calculo-sma` e `/api/registrar-calculo-smt` criados
 
 ---
 

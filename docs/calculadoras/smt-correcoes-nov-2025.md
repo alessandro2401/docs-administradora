@@ -20,7 +20,7 @@ Usuária Amanda Murielly reportou que ao gerar o PDF do cálculo, não constava 
 
 **Commit:** `65e78ef` - `fix: Adicionar seção de Depreciações (Leilão) no PDF`
 
-**Status:** ✅ Resolvido e em produção
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Resolvido e em produção
 
 ---
 
@@ -32,7 +32,7 @@ Usuária Amanda Murielly reportou que ao gerar o PDF do cálculo, não constava 
 
 **Commit:** `ccad231` - `fix: Adicionar seção de Depreciações na impressão`
 
-**Status:** ✅ Resolvido e em produção
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Resolvido e em produção
 
 ---
 
@@ -53,11 +53,11 @@ Usuária Amanda Murielly reportou que ao gerar o PDF do cálculo, não constava 
 
 **Commit:** `0762839` - `fix: Corrigir impressão usando iframe oculto`
 
-**Status:** ✅ Resolvido e em produção
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Resolvido e em produção
 
 ---
 
-## 📄 Estrutura Final dos Documentos
+## <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Estrutura Final dos Documentos
 
 Tanto o **PDF** quanto a **Impressão** agora contêm **4 seções completas**:
 
@@ -94,29 +94,29 @@ Tanto o **PDF** quanto a **Impressão** agora contêm **4 seções completas**:
 ## 🧪 Testes Realizados
 
 ### Teste 1: PDF com Depreciações
-- ✅ Formulário preenchido com dados de teste
-- ✅ Marcadas 2 depreciações:
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Formulário preenchido com dados de teste
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Marcadas 2 depreciações:
   - Veículo de Leilão por Sinistro (-25%) = R$ 37.500,00
   - Benefício Fiscal IPI/ICMS (-20%) = R$ 30.000,00
-- ✅ PDF gerado com sucesso
-- ✅ Seção de Depreciações aparece corretamente
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> PDF gerado com sucesso
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Seção de Depreciações aparece corretamente
 
 ### Teste 2: Impressão
-- ✅ Formulário preenchido
-- ✅ Cálculo executado
-- ✅ Botão "Imprimir" clicado
-- ✅ Não apareceu janela em branco
-- ✅ Sem erros no console JavaScript
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Formulário preenchido
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Cálculo executado
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Botão "Imprimir" clicado
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Não apareceu janela em branco
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Sem erros no console JavaScript
 
 ---
 
-## 📊 Histórico de Commits
+## <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> Histórico de Commits
 
 | Data | Hash | Mensagem | Status |
 |------|------|----------|--------|
-| 11/11/2025 | 65e78ef | fix: Adicionar seção de Depreciações (Leilão) no PDF | ✅ Produção |
-| 11/11/2025 | ccad231 | fix: Adicionar seção de Depreciações na impressão | ✅ Produção |
-| 11/11/2025 | 0762839 | fix: Corrigir impressão usando iframe oculto | ✅ Produção |
+| 11/11/2025 | 65e78ef | fix: Adicionar seção de Depreciações (Leilão) no PDF | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Produção |
+| 11/11/2025 | ccad231 | fix: Adicionar seção de Depreciações na impressão | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Produção |
+| 11/11/2025 | 0762839 | fix: Corrigir impressão usando iframe oculto | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Produção |
 
 ---
 

@@ -287,14 +287,14 @@ Garante que todas as rotas sejam tratadas pelo React Router.
 ## 9. Melhorias Recentes
 
 ### 9.1 Dezembro 2025
-- ✅ Corrigido roteamento SPA (vercel.json)
-- ✅ Substituídos emojis por ícones SVG (Lucide React)
-- ✅ Adicionados logos de todas as 7 marcas
-- ✅ Implementado Header e Footer em todas as páginas
-- ✅ Corrigido menu duplicado (HTML semântico)
-- ✅ Criadas páginas de Política de Privacidade e Termos de Uso
-- ✅ Adicionadas sombras e hover effects nos cards
-- ✅ Padronizado sistema de botões
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Corrigido roteamento SPA (vercel.json)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Substituídos emojis por ícones SVG (Lucide React)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Adicionados logos de todas as 7 marcas
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Implementado Header e Footer em todas as páginas
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Corrigido menu duplicado (HTML semântico)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Criadas páginas de Política de Privacidade e Termos de Uso
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Adicionadas sombras e hover effects nos cards
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Padronizado sistema de botões
 
 ---
 

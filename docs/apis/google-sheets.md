@@ -240,22 +240,22 @@ Os logs das requisições à API podem ser visualizados no Vercel:
 
 ### Segurança
 
-1. ✅ **Nunca expor as credenciais** da Service Account publicamente
-2. ✅ **Usar variáveis de ambiente** para armazenar credenciais
-3. ✅ **Limitar permissões** da Service Account apenas ao necessário
-4. ✅ **Monitorar acessos** através dos logs do Google Cloud
+1. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Nunca expor as credenciais** da Service Account publicamente
+2. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Usar variáveis de ambiente** para armazenar credenciais
+3. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Limitar permissões** da Service Account apenas ao necessário
+4. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Monitorar acessos** através dos logs do Google Cloud
 
 ### Performance
 
-1. ✅ **Usar batch operations** quando possível para reduzir número de requisições
-2. ✅ **Implementar retry logic** para lidar com falhas temporárias
-3. ✅ **Cachear autenticação** para evitar requisições desnecessárias
+1. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Usar batch operations** quando possível para reduzir número de requisições
+2. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Implementar retry logic** para lidar com falhas temporárias
+3. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Cachear autenticação** para evitar requisições desnecessárias
 
 ### Manutenção
 
-1. ✅ **Fazer backup regular** da planilha
-2. ✅ **Documentar mudanças** na estrutura das abas
-3. ✅ **Testar em ambiente de desenvolvimento** antes de fazer mudanças em produção
+1. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Fazer backup regular** da planilha
+2. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Documentar mudanças** na estrutura das abas
+3. <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Testar em ambiente de desenvolvimento** antes de fazer mudanças em produção
 
 ---
 

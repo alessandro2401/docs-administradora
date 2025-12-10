@@ -136,7 +136,7 @@ Exibe os três valores fundamentais que compõem o cálculo:
 
 ```html
 <div class="section-valores-sinistro">
-  <h3>📊 Valores do Sinistro</h3>
+  <h3><svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> Valores do Sinistro</h3>
   <div class="valores-grid">
     <div class="valor-item">
       <span class="label">Regulagem (MEDIAN):</span>
@@ -165,7 +165,7 @@ Exibe informações temporais importantes para o cálculo:
 
 ```html
 <div class="section-prazos">
-  <h3>⏱️ Prazos</h3>
+  <h3><svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Prazos</h3>
   <div class="prazos-grid">
     <div class="prazo-item">
       <span class="label">Dias para Reparação:</span>
@@ -238,12 +238,12 @@ Exibe informações temporais importantes para o cálculo:
 
 | Contraproposta | Valor Base | Limite Min | Limite Max | Resultado Esperado | Resultado Obtido |
 |----------------|------------|------------|------------|-------------------|------------------|
-| R$ 10.125,00 | R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | ✅ APROVADA (100%) | ✅ APROVADA |
-| R$ 11.340,00 | R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | ✅ APROVADA (112%) | ✅ APROVADA |
+| R$ 10.125,00 | R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA (100%) | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA |
+| R$ 11.340,00 | R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA (112%) | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA |
 | R$ 10.000,00 | R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | ❌ REPROVADA (abaixo) | ❌ REPROVADA |
 | R$ 12.000,00 | R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | ❌ REPROVADA (acima) | ❌ REPROVADA |
 
-**Status:** ✅ **100% de sucesso** - Todos os cenários validados corretamente
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **100% de sucesso** - Todos os cenários validados corretamente
 
 #### 2. Teste de Geração de PDF
 
@@ -251,18 +251,18 @@ Exibe informações temporais importantes para o cálculo:
 
 | Item | Esperado | Obtido | Status |
 |------|----------|--------|--------|
-| Número de páginas | 4 páginas | 4 páginas | ✅ |
-| Dados do Beneficiário | Incluídos | Incluídos | ✅ |
-| Valores do Sinistro | Incluídos | Incluídos | ✅ |
-| Prazos | Incluídos | Incluídos | ✅ |
-| Valor Base | Incluído | Incluído | ✅ |
-| Opção 1 completa | Incluída | Incluída | ✅ |
-| Opção 2 completa | Incluída | Incluída | ✅ |
-| Opção 3 completa | Incluída | Incluída | ✅ |
-| Recomendação | Incluída | Incluída | ✅ |
-| Análise de Contraproposta | Incluída | Incluída | ✅ |
-| Uso da Associação | Incluído | Incluído | ✅ |
-| Tabela de Parcelas (4) | Completa | Completa | ✅ |
+| Número de páginas | 4 páginas | 4 páginas | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Dados do Beneficiário | Incluídos | Incluídos | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Valores do Sinistro | Incluídos | Incluídos | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Prazos | Incluídos | Incluídos | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Valor Base | Incluído | Incluído | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Opção 1 completa | Incluída | Incluída | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Opção 2 completa | Incluída | Incluída | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Opção 3 completa | Incluída | Incluída | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Recomendação | Incluída | Incluída | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Análise de Contraproposta | Incluída | Incluída | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Uso da Associação | Incluído | Incluído | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
+| Tabela de Parcelas (4) | Completa | Completa | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> |
 
 **Métricas de Qualidade:**
 
@@ -272,26 +272,26 @@ Exibe informações temporais importantes para o cálculo:
 - **Formato:** PDF A4 padrão
 - **Compatibilidade:** Desktop, tablet, mobile
 
-**Status:** ✅ **100% de cobertura** - Todas as 12 seções incluídas no PDF
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **100% de cobertura** - Todas as 12 seções incluídas no PDF
 
 #### 3. Teste de Seções Adicionadas
 
 **Seção "Valores do Sinistro":**
 
-- ✅ Regulagem exibida corretamente (R$ 15.000,00)
-- ✅ Participação exibida corretamente (R$ 3.000,00)
-- ✅ Orçamento exibido corretamente (R$ 18.000,00)
-- ✅ Formatação monetária adequada
-- ✅ Seção incluída no PDF
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Regulagem exibida corretamente (R$ 15.000,00)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Participação exibida corretamente (R$ 3.000,00)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Orçamento exibido corretamente (R$ 18.000,00)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Formatação monetária adequada
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Seção incluída no PDF
 
 **Seção "Prazos":**
 
-- ✅ Dias para Reparação exibidos corretamente (15 dias)
-- ✅ Dias de Carro Reserva exibidos corretamente (0 dias)
-- ✅ Formatação de texto adequada
-- ✅ Seção incluída no PDF
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dias para Reparação exibidos corretamente (15 dias)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dias de Carro Reserva exibidos corretamente (0 dias)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Formatação de texto adequada
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Seção incluída no PDF
 
-**Status:** ✅ **100% funcional** - Ambas as seções operacionais
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **100% funcional** - Ambas as seções operacionais
 
 ## Checklist de Validação
 
@@ -324,7 +324,7 @@ Exibe informações temporais importantes para o cálculo:
 - [x] Site acessível em sma.administradoramutual.com.br
 - [x] Performance e responsividade validadas
 
-**Total:** 17/17 verificações ✅ **100% de sucesso**
+**Total:** 17/17 verificações <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **100% de sucesso**
 
 ## Métricas de Impacto
 
@@ -337,20 +337,20 @@ Exibe informações temporais importantes para o cálculo:
 
 ### Depois das Melhorias
 
-- ✅ Validação funcional com faixa de 12% (100% de precisão)
-- ✅ PDF completo com 4 páginas (100% do conteúdo)
-- ✅ Todas as 12 seções incluídas no PDF
-- ✅ Relatórios profissionais e completos
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Validação funcional com faixa de 12% (100% de precisão)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> PDF completo com 4 páginas (100% do conteúdo)
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Todas as 12 seções incluídas no PDF
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Relatórios profissionais e completos
 
 ### Indicadores de Qualidade
 
 | Métrica | Valor | Status |
 |---------|-------|--------|
-| Cobertura de Funcionalidades | 100% (12/12 seções) | ✅ Excelente |
-| Taxa de Sucesso em Testes | 100% (17/17 verificações) | ✅ Excelente |
-| Qualidade do PDF | Alta (scale: 2, 25MB) | ✅ Profissional |
-| Tempo de Geração | ~10 segundos | ✅ Aceitável |
-| Compatibilidade | Multi-plataforma | ✅ Universal |
+| Cobertura de Funcionalidades | 100% (12/12 seções) | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Excelente |
+| Taxa de Sucesso em Testes | 100% (17/17 verificações) | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Excelente |
+| Qualidade do PDF | Alta (scale: 2, 25MB) | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Profissional |
+| Tempo de Geração | ~10 segundos | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Aceitável |
+| Compatibilidade | Multi-plataforma | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Universal |
 
 ## Integração com Planilha Google Sheets
 
@@ -387,8 +387,8 @@ Valor da Contraproposta <= Valor Máximo
 
 | Valor da Contraproposta | Valor Mínimo | Valor Máximo | Status |
 |------------------------|--------------|--------------|--------|
-| R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | ✅ APROVADA |
-| R$ 11.000,00 | R$ 10.125,00 | R$ 11.340,00 | ✅ APROVADA |
+| R$ 10.125,00 | R$ 10.125,00 | R$ 11.340,00 | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA |
+| R$ 11.000,00 | R$ 10.125,00 | R$ 11.340,00 | <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA |
 | R$ 12.000,00 | R$ 10.125,00 | R$ 11.340,00 | ❌ REPROVADA |
 
 #### Acesso à Planilha
@@ -449,7 +449,7 @@ Com **100% de sucesso** em todos os testes realizados e **17/17 verificações**
 **Última Atualização:** 06 de Novembro de 2025  
 **Versão:** 2.0.0  
 **Autor:** Equipe de Desenvolvimento - Administradora Mutual  
-**Status:** ✅ **100% Funcional e em Produção**
+**Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **100% Funcional e em Produção**
 
 
 ## Correção Técnica: Mapeamento de Colunas na Planilha Google Sheets
@@ -462,7 +462,7 @@ Durante a integração com a planilha Google Sheets, foi identificado que os val
 
 **Mapeamento Incorreto (Antes da Correção):**
 
-- **Coluna I:** Valor da Contraproposta ✅ (correto)
+- **Coluna I:** Valor da Contraproposta <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> (correto)
 - **Coluna J:** Dias para Reparação ❌ (deveria ser Valor Mínimo da Contraproposta)
 - **Coluna K:** Dias de Carro Reserva ❌ (deveria ser Valor Máximo da Contraproposta)
 
@@ -533,7 +533,7 @@ Os valores registrados seriam:
 - **Coluna I:** R$ 11.000,00 (valor proposto)
 - **Coluna J:** R$ 10.125,00 (limite mínimo = 100%)
 - **Coluna K:** R$ 11.340,00 (limite máximo = 112%)
-- **Status:** ✅ APROVADA (108,6% do valor do acordo)
+- **Status:** <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> APROVADA (108,6% do valor do acordo)
 
 ### Repositórios Atualizados
 

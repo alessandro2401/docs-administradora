@@ -33,7 +33,7 @@ Análise completa da calculadora total.administradoramutual.com.br.
 ### Correções Recentes
 
 #### 25/11/2025 - Botão Imprimir
-- ✅ **Problema:** Botão "Imprimir" abria janela em branco
-- ✅ **Causa:** Navegadores bloqueavam `document.write()` em janelas abertas com `window.open()`
-- ✅ **Solução:** Implementada nova abordagem usando `@media print` para impressão direta
-- ✅ **Resultado:** Diálogo de impressão nativo funciona perfeitamente
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Problema:** Botão "Imprimir" abria janela em branco
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Causa:** Navegadores bloqueavam `document.write()` em janelas abertas com `window.open()`
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Solução:** Implementada nova abordagem usando `@media print` para impressão direta
+- <svg style="display: inline-block; vertical-align: middle; margin-right: 6px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> **Resultado:** Diálogo de impressão nativo funciona perfeitamente
