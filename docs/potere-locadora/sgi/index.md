@@ -70,7 +70,8 @@ O desenvolvimento inicial (Sprints 1-10, 20 semanas) foca em 3 pilares essenciai
 - [Guia de UX/UI](/potere-locadora/sgi/design/ux-ui)
 
 ### 🎯 Branding
-- [Manual de Identidade Visual](/potere-locadora/sgi/branding/identidade-visual)
+- [Manual da Marca Oficial](https://marca.administradoramutual.com.br/) (Acesso ao site de marcas)
+- [Manual de Identidade Visual (PDF/Docs)](/potere-locadora/sgi/branding/identidade-visual)
 - [Guia de Tom de Voz](/potere-locadora/sgi/branding/tom-de-voz)
 
 ### 🔒 Governança
