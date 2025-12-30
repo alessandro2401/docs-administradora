@@ -54,6 +54,7 @@ export default defineConfig({
             { text: 'Visão Geral', link: '/sistemas-internos/' },
             { text: 'Portal de Sistemas', link: '/sistemas-internos/portal-de-sistemas' },
             { text: 'Painel de Monitoramento', link: '/sistemas-internos/painel-monitoramento' },
+{ text: 'Sistema de Salvados', link: '/sistemas-internos/sistema-salvados' },
             { text: 'Comercial Alpha', link: '/sistemas-internos/comercial' },
             { text: 'Gestão de Sinistros', link: '/sistemas-internos/sinistros' },
             { text: 'Sistema Financeiro', link: '/sistemas-internos/financeiro' },
