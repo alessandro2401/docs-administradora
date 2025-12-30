@@ -14,6 +14,17 @@ O painel é uma aplicação web estática, construída com HTML, CSS e JavaScrip
 2.  **Grid de Sites:** Uma grade com cards individuais para cada site, mostrando informações detalhadas como status, tempo de resposta e uptime.
 3.  **Alertas Recentes:** Uma seção que exibe alertas para sites que estão offline.
 
+## Sistema de Notificações por Email (30/12/2025)
+
+Em 30 de Dezembro de 2025, foi implementado um sistema de notificações automáticas por email para alertar sobre falhas críticas nos sites monitorados. Esta funcionalidade utiliza o serviço **EmailJS** para enviar alertas diretamente do frontend, sem a necessidade de um backend.
+
+### Funcionalidades do Sistema de Notificações
+
+- **Detecção de Mudança de Status:** O sistema detecta quando um site que estava online fica offline e dispara um alerta.
+- **Cooldown de Alertas:** Para evitar o envio excessivo de emails, foi implementado um cooldown de 30 minutos. Um novo alerta para o mesmo site só será enviado após este período.
+- **Template de Email Detalhado:** O email de alerta contém informações cruciais como nome do site, URL, status, horário da falha e tempo de resposta.
+- **Persistência de Alertas:** O histórico de alertas enviados é armazenado no localStorage para gerenciar o cooldown e evitar duplicidade.
+
 ## Gráfico de Histórico de Uptime (30/12/2025)
 
 Em 30 de Dezembro de 2025, foi adicionado um gráfico de histórico de uptime em formato de heatmap para cada site. Esta funcionalidade permite uma visualização rápida e intuitiva da disponibilidade nas últimas 24 horas.
