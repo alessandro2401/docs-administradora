@@ -8,11 +8,20 @@ O Painel de Monitoramento de Sites é uma ferramenta interna que fornece uma vis
 
 ## Estrutura e Tecnologias
 
-O painel é uma aplicação web estática, construída com HTML, CSS e JavaScript puro. A interface é organizada em três seções principais:
+O painel é uma aplicação web estática, construída com HTML, CSS e JavaScript puro. Ele realiza o monitoramento em tempo real dos sites através de requisições HTTP diretas, com persistência de dados no localStorage do navegador. A interface é organizada em três seções principais:
 
 1.  **Métricas Gerais:** Cards que exibem o número de sites online, offline, o total de sites monitorados e o uptime médio.
 2.  **Grid de Sites:** Uma grade com cards individuais para cada site, mostrando informações detalhadas como status, tempo de resposta e uptime.
 3.  **Alertas Recentes:** Uma seção que exibe alertas para sites que estão offline.
+
+## Atualização de Monitoramento Real (30/12/2025)
+
+Em 30 de Dezembro de 2025, o painel foi atualizado para implementar um sistema de monitoramento real, substituindo os dados simulados. As principais funcionalidades adicionadas foram:
+
+- **Verificação Real dos Sites:** Requisições HTTP HEAD para cada site a cada 5 minutos, medindo tempo de resposta e detectando status (online, offline, timeout).
+- **Persistência de Dados:** Histórico das últimas 100 verificações por site armazenado no localStorage, permitindo o cálculo de uptime real das últimas 24 horas.
+- **Sistema de Alertas:** Detecção e exibição automática de alertas para sites offline.
+- **Métricas Reais:** Tempo de resposta em milissegundos, uptime calculado e estatísticas agregadas.
 
 ## Atualização de Ícones (30/12/2025)
 
