@@ -14,6 +14,27 @@ O painel é uma aplicação web estática, construída com HTML, CSS e JavaScrip
 2.  **Grid de Sites:** Uma grade com cards individuais para cada site, mostrando informações detalhadas como status, tempo de resposta e uptime.
 3.  **Alertas Recentes:** Uma seção que exibe alertas para sites que estão offline.
 
+## Página de Detalhes por Site (30/12/2025)
+
+Em 30 de Dezembro de 2025, foi implementada uma página de detalhes individual para cada site, acessível ao clicar no card do site no painel principal. Esta página oferece uma análise aprofundada do histórico e performance de cada site.
+
+### Funcionalidades da Página de Detalhes
+
+- **Métricas Avançadas:** Uptime de 24h, 7 dias e 30 dias, tempo médio de resposta e total de incidentes.
+- **Gráfico de Tempo de Resposta:** Gráfico de linha com o histórico de tempo de resposta nas últimas 24 horas.
+- **Gráfico de Incidentes:** Gráfico de barras com o número de incidentes por dia na última semana.
+- **Timeline de Incidentes:** Lista cronológica de todos os incidentes e recuperações.
+
+## Sistema de Testes de Funcionalidade (30/12/2025)
+
+Foi adicionada uma página de testes de funcionalidade, acessível através de um botão no painel principal. Esta ferramenta permite verificar a acessibilidade, performance e integridade dos recursos de cada site.
+
+### Funcionalidades dos Testes
+
+- **Testes Abrangentes:** Verificação de acessibilidade (HTTP status), tempo de resposta e carregamento de recursos.
+- **Score de Performance:** Cada site recebe um score de 0 a 100 com base nos resultados dos testes.
+- **Interface Intuitiva:** Resultados são exibidos em cards individuais com status de "Aprovado" ou "Falhou".
+
 ## Sistema de Notificações por Email (30/12/2025)
 
 Em 30 de Dezembro de 2025, foi implementado um sistema de notificações automáticas por email para alertar sobre falhas críticas nos sites monitorados. Esta funcionalidade utiliza o serviço **EmailJS** para enviar alertas diretamente do frontend, sem a necessidade de um backend.
