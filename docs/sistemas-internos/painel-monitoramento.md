@@ -14,6 +14,21 @@ O painel é uma aplicação web estática, construída com HTML, CSS e JavaScrip
 2.  **Grid de Sites:** Uma grade com cards individuais para cada site, mostrando informações detalhadas como status, tempo de resposta e uptime.
 3.  **Alertas Recentes:** Uma seção que exibe alertas para sites que estão offline.
 
+## Sistema de Verificação Multi-Camada (30/12/2025)
+
+Em 30 de Dezembro de 2025, foi implementado um sistema de verificação multi-camada para melhorar a detecção de falhas e fornecer uma análise mais completa da saúde dos sites.
+
+### Camadas de Verificação
+
+- **Camada 1: Conectividade:** Verifica a acessibilidade básica do site e o tempo de resposta.
+- **Camada 2: Performance:** Analisa o tempo de resposta e classifica como "crítico" (> 5s) ou "lento" (> 3s).
+- **Camada 3: Segurança (SSL):** Verifica se o site utiliza HTTPS.
+
+### Novos Status
+
+- **Warning (Aviso):** Indica problemas de performance ou falta de HTTPS.
+- **Degraded (Degradado):** Indica problemas críticos de performance.
+
 ## Página de Detalhes por Site (30/12/2025)
 
 Em 30 de Dezembro de 2025, foi implementada uma página de detalhes individual para cada site, acessível ao clicar no card do site no painel principal. Esta página oferece uma análise aprofundada do histórico e performance de cada site.
