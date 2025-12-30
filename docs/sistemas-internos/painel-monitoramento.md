@@ -14,6 +14,21 @@ O painel é uma aplicação web estática, construída com HTML, CSS e JavaScrip
 2.  **Grid de Sites:** Uma grade com cards individuais para cada site, mostrando informações detalhadas como status, tempo de resposta e uptime.
 3.  **Alertas Recentes:** Uma seção que exibe alertas para sites que estão offline.
 
+## Gráfico de Histórico de Uptime (30/12/2025)
+
+Em 30 de Dezembro de 2025, foi adicionado um gráfico de histórico de uptime em formato de heatmap para cada site. Esta funcionalidade permite uma visualização rápida e intuitiva da disponibilidade nas últimas 24 horas.
+
+### Funcionalidades do Heatmap
+
+- **Visualização em Blocos:** As últimas 24 horas são divididas em 48 blocos de 30 minutos.
+- **Cores por Status:**
+  - **Verde:** Uptime > 95%
+  - **Amarelo:** Uptime entre 50% e 95% (degradado)
+  - **Vermelho:** Uptime < 50% (offline)
+  - **Cinza:** Sem dados de verificação
+- **Tooltips Interativos:** Ao passar o mouse sobre um bloco, são exibidos detalhes como horário, percentual de uptime e número de verificações no período.
+- **Legenda Clara:** Uma legenda abaixo do gráfico explica o significado de cada cor.
+
 ## Atualização de Monitoramento Real (30/12/2025)
 
 Em 30 de Dezembro de 2025, o painel foi atualizado para implementar um sistema de monitoramento real, substituindo os dados simulados. As principais funcionalidades adicionadas foram:
