@@ -53,6 +53,7 @@ export default defineConfig({
           items: [
             { text: 'Visão Geral', link: '/sistemas-internos/' },
             { text: 'Portal de Sistemas', link: '/sistemas-internos/portal-de-sistemas' },
+            { text: 'Painel de Monitoramento', link: '/sistemas-internos/painel-monitoramento' },
             { text: 'Comercial Alpha', link: '/sistemas-internos/comercial' },
             { text: 'Gestão de Sinistros', link: '/sistemas-internos/sinistros' },
             { text: 'Sistema Financeiro', link: '/sistemas-internos/financeiro' },
@@ -91,6 +92,7 @@ export default defineConfig({
           text: 'Identidade Visual',
           items: [
             { text: 'Manual da Marca Completo', link: '/identidade-visual/manual-completo' },
+            { text: 'Padrão de Ícones SVG', link: '/identidade-visual/padrao-icones' },
             { text: 'Downloads', link: '/identidade-visual/downloads' },
             { text: 'Exemplos de Aplicação', link: '/identidade-visual/exemplos' },
           ]
