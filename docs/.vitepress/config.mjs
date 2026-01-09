@@ -15,7 +15,6 @@ export default defineConfig({
       { text: 'Processos', link: '/processos/' },
       { text: 'Identidade Visual', link: '/identidade-visual/' },
       { text: 'Suporte', link: '/suporte/' },
-      { text: 'POTERE Locadora', link: '/potere-locadora/' },
     ],
     sidebar: {
       '/sites-publicos/': [
@@ -23,17 +22,10 @@ export default defineConfig({
           text: 'Sites Públicos',
           items: [
             { text: 'Site Institucional', link: '/sites-publicos/institucional' },
-            { text: '↳ Stack Técnica', link: '/sites-publicos/institucional-tech' },
+            { text: 'Grupo MMB', link: '/sites-publicos/grupo-mmb' },
+            { text: 'Central de Notícias', link: '/sites-publicos/noticias' },
             { text: 'AURA Seguradora (S4)', link: '/sites-publicos/aura-s4' },
-            { text: '↳ Stack Técnica', link: '/sites-publicos/aura-s4-tech' },
-            { text: 'Gestão Segura', link: '/sites-publicos/gestao-segura' },
-            { text: '↳ Stack Técnica', link: '/sites-publicos/gestao-segura-tech' },
             { text: 'Manual da Marca', link: '/sites-publicos/manual-marca' },
-            { text: '↳ Stack Técnica', link: '/sites-publicos/manual-marca-tech' },
-            { text: 'Calculadora SMA', link: '/sites-publicos/calculadora-sma-tech' },
-            { text: 'Calculadora SMT', link: '/sites-publicos/calculadora-smt-tech' },
-            { text: 'Portal de Sistemas', link: '/sites-publicos/portal-sistemas-tech' },
-            { text: 'Gerador de Assinaturas', link: '/sites-publicos/gerador-assinaturas-tech' },
           ]
         }
       ],
@@ -42,7 +34,6 @@ export default defineConfig({
           text: 'Calculadoras',
           items: [
             { text: 'SMA - Socorro Mútuo Acordo', link: '/calculadoras/sma' },
-            { text: '↳ Nova Funcionalidade', link: '/calculadoras/sma-nova-funcionalidade' },
             { text: 'SMT - Socorro Mútuo Total', link: '/calculadoras/smt' },
           ]
         }
@@ -51,13 +42,16 @@ export default defineConfig({
         {
           text: 'Sistemas Internos',
           items: [
-            { text: 'Visão Geral', link: '/sistemas-internos/' },
-            { text: 'Portal de Sistemas', link: '/sistemas-internos/portal-de-sistemas' },
-            { text: 'Painel de Monitoramento', link: '/sistemas-internos/painel-monitoramento' },
-{ text: 'Sistema de Salvados', link: '/sistemas-internos/sistema-salvados' },
-            { text: 'Comercial Alpha', link: '/sistemas-internos/comercial' },
-            { text: 'Gestão de Sinistros', link: '/sistemas-internos/sinistros' },
-            { text: 'Sistema Financeiro', link: '/sistemas-internos/financeiro' },
+            { text: 'Portal de Sistemas', link: '/sistemas-internos/portal' },
+            { text: 'Gestão de Salvados', link: '/sistemas-internos/salvados' },
+            { text: 'SOU - Sistema Operacional Unificado', link: '/sistemas-internos/sou' },
+            { text: 'Visão 360º', link: '/sistemas-internos/visao-360' },
+            { text: 'Gestão de Sites', link: '/sistemas-internos/gestao-sites' },
+            { text: 'Gestão de Sinistros (POP)', link: '/sistemas-internos/sinistros' },
+            { text: 'Sistema Financeiro (POP)', link: '/sistemas-internos/financeiro' },
+            { text: 'Comercial Alpha (POP)', link: '/sistemas-internos/comercial' },
+            { text: 'Gestão Segura', link: '/sistemas-internos/gestao-segura' },
+            { text: 'POTERE Locadora', link: '/sistemas-internos/potere-locadora' },
           ]
         }
       ],
@@ -66,6 +60,8 @@ export default defineConfig({
           text: 'Ferramentas',
           items: [
             { text: 'Gerador de Assinaturas', link: '/ferramentas/gerador-assinaturas' },
+            { text: 'Gerador de Prompts', link: '/ferramentas/prompts' },
+            { text: 'Due Diligence', link: '/ferramentas/due-diligence' },
           ]
         }
       ],
@@ -93,7 +89,6 @@ export default defineConfig({
           text: 'Identidade Visual',
           items: [
             { text: 'Manual da Marca Completo', link: '/identidade-visual/manual-completo' },
-            { text: 'Padrão de Ícones SVG', link: '/identidade-visual/padrao-icones' },
             { text: 'Downloads', link: '/identidade-visual/downloads' },
             { text: 'Exemplos de Aplicação', link: '/identidade-visual/exemplos' },
           ]
@@ -103,19 +98,13 @@ export default defineConfig({
         {
           text: 'Suporte',
           items: [
-            { text: 'Contatos e FAQ', link: '/suporte/' },
-          ]
-        }
-      ],
-      '/potere-locadora/': [
-        {
-          text: 'POTERE - Aluguéis Ativos',
-          items: [
-            { text: 'Visão Geral', link: '/potere-locadora/' },
-            { text: 'Documentação Técnica', link: '/potere-locadora/tech' },
-          ]
-        }
-      ],
+            { text: 'Suporte',
+            items: [
+              { text: 'Contatos e FAQ', link: '/suporte/' },
+            ]
+          }
+        ]
+      }
     }
   }
 })
