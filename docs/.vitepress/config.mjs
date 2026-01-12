@@ -98,13 +98,10 @@ export default defineConfig({
         {
           text: 'Suporte',
           items: [
-            { text: 'Suporte',
-            items: [
-              { text: 'Contatos e FAQ', link: '/suporte/' },
-            ]
-          }
-        ]
-      }
+            { text: 'Contatos e FAQ', link: '/suporte/' },
+          ]
+        }
+      ]
     }
   }
 })
