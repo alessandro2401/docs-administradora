@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Administradora Mutual - Documentação',
   description: 'Portal de documentação centralizado para todos os sites, sistemas e processos da Administradora Mutual.',
   ignoreDeadLinks: true,
+  cleanUrls: true,
   themeConfig: {
     nav: [
       { text: 'Início', link: '/' },
