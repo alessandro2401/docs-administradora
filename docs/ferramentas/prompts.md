@@ -14,7 +14,7 @@ Atualmente, a plataforma conta com um acervo de **970 prompts profissionais**, d
 
 | Categoria | Total de Prompts | Descrição |
 | :--- | :---: | :--- |
-| **Geração de Imagens** | 174 | Prompts detalhados para Midjourney, DALL-E, etc. |
+| **Geração de Imagens** | 174 | Prompts detalhados para Midjourney, DALL-E, Leonardo AI, etc. |
 | **Gestão Empresarial** | 126 | Estratégia, planejamento, finanças e RH. |
 | **Otimização de Processos** | 73 | Automação, eficiência e melhoria contínua. |
 | **Vendas e Marketing** | 60 | Copywriting, campanhas, redes sociais e funis de venda. |
@@ -36,14 +36,41 @@ Atualmente, a plataforma conta com um acervo de **970 prompts profissionais**, d
 4. **Cole na IA:** Cole o conteúdo no ChatGPT, Claude, Gemini ou outra ferramenta de sua preferência.
 5. **Personalize:** Substitua as informações entre colchetes `[ ]` pelos dados específicos do seu negócio ou tarefa.
 
+## Categorias Especiais
+
+### Super Prompts
+
+Os **Super Prompts** são prompts mestres de alta complexidade que transformam a IA em um especialista dedicado. Cada um possui identidade própria, regras de ouro e protocolos operacionais detalhados:
+
+| Nome | Especialidade |
+| :--- | :--- |
+| **Jarvis** | Criação de Personas e Avatares |
+| **Jason** | Posts Criativos para Instagram |
+| **Nexus** | Esteira de Produtos e LTV |
+| **Alquimista** | Ofertas e Copywriting |
+| **Leo Vendas** | Ofertas Low Ticket |
+| **Multiplicador** | Gerador de Posts em Minutos |
+
+### Geração de Imagens
+
+A categoria **Geração de Imagens** contém 174 prompts detalhados para ferramentas como Midjourney, DALL-E e Leonardo AI. Cada prompt inclui especificações técnicas de iluminação, lente, resolução e proporção.
+
+### Prompts de Vídeo
+
+Prompts especializados para geração de vídeos com IA, incluindo:
+- **Comerciais:** Marcas de luxo e tecnologia (Tesla, Rolex, Apple, Ferrari)
+- **Influencers:** Diversos nichos (Moda, Café, Imobiliário, Tecnologia)
+- **Vlogs:** Estilo primeira pessoa (Aventura, Bíblico, Viagens)
+- **Natal:** Coleção temática com Papai Noel
+
 ## Histórico de Atualizações
 
-- **Jan/2026:**
-  - Adicionados **164 novos prompts** para Geração de Imagens.
-  - Adicionados **133 novos prompts** de vídeo (Comercial, Influencer, Vlog, etc.).
-  - Criada a categoria **Super Prompts** com 12 prompts mestres.
-  - Total do acervo expandido para **970 prompts**.
+- **Janeiro/2026:**
+  - Adicionados **164 novos prompts** para Geração de Imagens
+  - Adicionados **133 novos prompts** de vídeo (Comercial, Influencer, Vlog, etc.)
+  - Criada a categoria **Super Prompts** com 12 prompts mestres
+  - Total do acervo expandido para **970 prompts**
 
 ## Acesso
 
-Acesso livre para todos os colaboradores da Administradora Mutual através do portal de sistemas ou pelo link direto.
+Acesso livre para todos os colaboradores da Administradora Mutual através do portal de sistemas ou pelo link direto: [prompts.administradoramutual.com.br](https://prompts.administradoramutual.com.br)
