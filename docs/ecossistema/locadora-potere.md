@@ -1,4 +1,6 @@
 ---
+sidebar: auto
+---
 
 # Documentação do Sistema: Locadora Mutual
 
