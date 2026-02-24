@@ -8,6 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Início', link: '/' },
+      { text: 'Ecossistema', link: '/ecossistema/' },
       { text: 'Sites Públicos', link: '/sites-publicos/' },
       { text: 'Calculadoras', link: '/calculadoras/' },
       { text: 'Sistemas Internos', link: '/sistemas-internos/' },
@@ -18,6 +19,78 @@ export default defineConfig({
       { text: 'Suporte', link: '/suporte/' },
     ],
     sidebar: {
+      '/ecossistema/': [
+        {
+          text: 'Ecossistema Completo',
+          items: [
+            { text: 'Visão Geral', link: '/ecossistema/' },
+          ]
+        },
+        {
+          text: 'Site Principal',
+          collapsed: false,
+          items: [
+            { text: 'Site Institucional', link: '/ecossistema/site-institucional' },
+          ]
+        },
+        {
+          text: 'Portal de Acesso',
+          collapsed: false,
+          items: [
+            { text: 'Portal de Sistemas', link: '/ecossistema/portal-sistemas' },
+          ]
+        },
+        {
+          text: 'Sistemas Operacionais',
+          collapsed: false,
+          items: [
+            { text: 'Calculadora SMA (Parcial)', link: '/ecossistema/sma-calculadora' },
+            { text: 'Calculadora SMT (Total)', link: '/ecossistema/calculadora-smt' },
+            { text: 'AURA Seguradora S4', link: '/ecossistema/s4-aura-seguradora' },
+            { text: 'Gestão de Salvados', link: '/ecossistema/salvados' },
+            { text: 'POTERE Locadora', link: '/ecossistema/locadora-potere' },
+            { text: 'SOU — Sistema Unificado', link: '/ecossistema/sou-sistema' },
+            { text: 'Due Diligence', link: '/ecossistema/formulario-due-diligence' },
+          ]
+        },
+        {
+          text: 'POPs e Documentação',
+          collapsed: false,
+          items: [
+            { text: 'POP Evento e Sinistro', link: '/ecossistema/pop-evento-sinistro' },
+            { text: 'POP Financeiro', link: '/ecossistema/pop-financeiro' },
+            { text: 'POPs Comercial — Alpha', link: '/ecossistema/pops-comercial' },
+            { text: 'Análise Gestão Segura', link: '/ecossistema/gestao-segura' },
+            { text: 'Manual da Marca', link: '/ecossistema/manual-marca' },
+          ]
+        },
+        {
+          text: 'Ferramentas e Utilitários',
+          collapsed: false,
+          items: [
+            { text: 'Gerador de Assinaturas', link: '/ecossistema/gerador-assinaturas' },
+            { text: 'Gerador de Prompts', link: '/ecossistema/gerador-prompts' },
+            { text: 'Painel de Monitoramento', link: '/ecossistema/painel-monitoramento' },
+            { text: 'Central de Notícias', link: '/ecossistema/central-noticias' },
+          ]
+        },
+        {
+          text: 'Dashboards Estratégicos',
+          collapsed: false,
+          items: [
+            { text: 'Grupo MMB — Hub', link: '/ecossistema/grupo-mmb-hub' },
+            { text: 'Dashboard Orçamentário 2026', link: '/ecossistema/dashboard-orcamentario' },
+            { text: 'Monitoramento DOU', link: '/ecossistema/monitoramento-dou' },
+          ]
+        },
+        {
+          text: 'Em Desenvolvimento',
+          collapsed: false,
+          items: [
+            { text: 'Visão 360', link: '/ecossistema/visao-360' },
+          ]
+        },
+      ],
       '/sites-publicos/': [
         {
           text: 'Sites Públicos',
