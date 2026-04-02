@@ -1,117 +1,174 @@
-> # Sistema de Monitoramento do Diário Oficial
+# Sistema de Monitoramento do Diário Oficial da União (DOU)
 
-> Documentação completa do Sistema de Monitoramento do Diário Oficial, incluindo funcionalidades, layout, stack técnica e guia de uso.
+## Visão Geral
 
-## Informações Gerais
+O **Sistema de Monitoramento do Diário Oficial da União** é uma plataforma interna desenvolvida para a Administradora Mutual com o objetivo de acompanhar automaticamente as publicações do DOU relevantes ao setor de proteção patrimonial mutualista e seguros. O sistema coleta, organiza e disponibiliza publicações do DOU, além de manter um cadastro completo das associações de proteção veicular registradas na SUSEP.
 
-| Campo                  | Detalhe                                                                                             |
-| ---------------------- | --------------------------------------------------------------------------------------------------- |
-| **URL**                | [https://diariomont-xfarhndy.manus.space/](https://diariomont-xfarhndy.manus.space/)                 |
-| **Status**             | Ativo                                                                                               |
-| **Tipo de Acesso**     | Requer Login                                                                                        |
-| **Última Verificação** | 24 de Fevereiro de 2026                                                                             |
+| Atributo | Valor |
+| --- | --- |
+| **URL de Produção** | [https://dou.administradoramutual.com.br](https://dou.administradoramutual.com.br) |
+| **Repositório GitHub** | [https://github.com/alessandro2401/dou-monitoring-system](https://github.com/alessandro2401/dou-monitoring-system) (privado) |
+| **Stack Principal** | React 19 + TypeScript + tRPC + Express + MySQL (TiDB) |
+| **Hospedagem** | Manus (plataforma gerenciada) |
+| **Status** | Ativo e em produção |
+| **Última Atualização** | Abril de 2026 |
 
-## Propósito e Público-Alvo
+---
 
-O Sistema de Monitoramento do Diário Oficial é uma ferramenta interna estratégica para a equipe da Administradora Mutual. O seu principal objetivo é automatizar a vigilância de publicações nos Diários Oficiais, um processo tradicionalmente manual, demorado e suscetível a falhas humanas. Ao automatizar essa tarefa, o sistema visa a mitigar riscos, garantir a conformidade regulatória e até mesmo fornecer insights para a tomada de decisões de negócio.
+## Funcionalidades Implementadas
 
-O público-alvo primário é a equipe jurídica e administrativa da empresa, que necessita acompanhar de perto as informações e decisões governamentais que possam impactar a organização. No entanto, o sistema também pode ser de grande valia para outros departamentos, como o de compliance, o de relações institucionais e até mesmo o de desenvolvimento de novos negócios.
+### Monitoramento do DOU
 
-## Stack Técnica
+O sistema realiza coleta automática das publicações do Diário Oficial da União por meio da API pública do DOU (Imprensa Nacional). A coleta é agendada diariamente e registra publicações relacionadas ao setor de seguros, proteção patrimonial e regulação da SUSEP.
 
-A verificação da stack técnica completa foi impossibilitada pela falta de acesso ao sistema. Contudo, com base nas preferências do usuário e nas tecnologias comumente empregadas em aplicações web modernas desta natureza, a seguinte stack é uma suposição bastante razoável e bem fundamentada:
+- Coleta automática diária de publicações do DOU
+- Busca por palavras-chave configuráveis (seguros, SUSEP, proteção patrimonial, etc.)
+- Histórico de coletas com status e contadores
+- Visualização e busca de publicações por data, órgão, tipo de ato e palavras-chave
 
-| Tecnologia          | Uso                                                                                                                                                              |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Framework**       | **Next.js** - Ideal para a renderização do lado do servidor (SSR), o que melhora a performance e a segurança, aspectos cruciais para uma aplicação de negócios.         |
-| **Linguagem**       | **TypeScript** - Essencial para garantir a segurança de tipos em uma aplicação crítica para os negócios, reduzindo a probabilidade de erros em tempo de execução.     |
-| **Estilização**     | **Tailwind CSS** - Permite a criação de interfaces de usuário consistentes e customizáveis de forma rápida e eficiente, sem a necessidade de escrever CSS do zero. |
-| **Hospedagem**      | **Vercel** - Plataforma otimizada para o deploy de aplicações Next.js, oferecendo escalabilidade, performance e um processo de CI/CD simplificado.                |
-| **Outras Libs**     | **React Hook Form, Zod, Shadcn UI** - Ferramentas que agilizam o desenvolvimento de formulários, a validação de dados e a criação de componentes de UI.         |
+### Cadastro de Associações SUSEP
 
-## Arquitetura (Hipotética)
+O sistema mantém o cadastro completo e atualizado de todas as **Associações de Proteção Patrimonial Mutualista** registradas na SUSEP. Em abril de 2026, foi realizada uma importação completa dos dados diretamente da API oficial da SUSEP, totalizando **2.220 associações únicas**.
 
-A arquitetura do sistema provavelmente segue um modelo de microsserviços, com um frontend Next.js consumindo uma API backend. Essa API, por sua vez, seria responsável pela lógica de negócio, como a busca e o processamento de publicações, a gestão de usuários e o envio de notificações. O banco de dados poderia ser um PostgreSQL ou MongoDB, dependendo da natureza dos dados.
+| Status SUSEP | Quantidade |
+| --- | --- |
+| Em regularização junto à Susep | 2.205 |
+| Cancelada | 15 |
+| **Total** | **2.220** |
 
-## Layout e Design
+Os estados com maior concentração de associações são: MG (566), PR (283), PE (239), RJ (203) e SC (180).
 
-O layout da página de login, a única acessível, é minimalista e centrado, transmitindo uma imagem de profissionalismo e foco na funcionalidade. O formulário de login é o elemento central, com um design limpo e intuitivo.
+### Sistema de Alertas
 
-A paleta de cores é predominantemente neutra, com branco e tons de cinza, o que confere um aspecto sóbrio e corporativo à interface. Os botões de ação possuem cores de destaque, guiando o usuário de forma clara. A tipografia é moderna, sem serifa e de fácil leitura, contribuindo para uma experiência de usuário agradável.
+Permite configurar alertas personalizados por palavras-chave, seguradoras, órgãos e tipos de ato. Os alertas são enviados por e-mail quando novas publicações relevantes são detectadas.
 
-A página de login é totalmente responsiva, adaptando-se de forma fluida a diferentes resoluções de tela, desde desktops a dispositivos móveis. Não foi possível, no entanto, analisar o layout das áreas internas do sistema, nem a existência de temas claro e escuro.
+### Painel Administrativo
 
-## Funcionalidades
+Dashboard com visão consolidada das publicações recentes, estatísticas de coleta, status das associações e histórico de alertas disparados.
 
-A análise das funcionalidades foi limitada à tela de login. As funcionalidades internas são hipotéticas, baseadas na finalidade do sistema.
+---
 
-### Autenticação de Usuário
+## Arquitetura Técnica
 
-O sistema possui uma tela de login que solicita um endereço de e-mail como primeiro passo. Em seguida, são oferecidas as seguintes opções de autenticação:
+O sistema segue uma arquitetura monolítica moderna com separação clara entre frontend e backend, comunicando-se exclusivamente via tRPC.
 
-*   **Login com E-mail e Senha:** Presumivelmente, o método padrão de autenticação.
-*   **Login com Provedores OAuth:** Integração com Google, Microsoft e Apple, oferecendo uma alternativa de login mais rápida e segura.
-*   **Verificação de Captcha:** Utilização do Cloudflare para a verificação de "humanidade", uma medida de segurança para prevenir ataques de força bruta.
+```
+client/                     ← Frontend React 19 + Tailwind CSS 4
+  src/
+    pages/                  ← Páginas: Dashboard, Publicações, Associações, Alertas
+    components/             ← Componentes reutilizáveis (DashboardLayout, etc.)
+    lib/trpc.ts             ← Cliente tRPC
 
-### Funcionalidades Internas (Hipotéticas)
+server/                     ← Backend Express 4 + tRPC 11
+  routers.ts                ← Procedures tRPC (auth, publications, associations, alerts)
+  db.ts                     ← Query helpers Drizzle ORM
 
-*   **Dashboard:** Uma página inicial que apresentaria um resumo das publicações mais recentes, alertas pendentes e outras informações relevantes.
-*   **Busca Avançada:** Uma ferramenta de busca que permitiria a pesquisa por termos específicos, datas, órgãos públicos, etc.
-*   **Criação de Alertas:** A funcionalidade principal do sistema, que permitiria aos usuários cadastrar termos de interesse para serem notificados quando houver novas publicações.
-*   **Geração de Relatórios:** Ferramenta para a criação de relatórios personalizados, que poderiam ser exportados em diferentes formatos (PDF, CSV, etc.).
-*   **Gestão de Usuários:** Uma área administrativa para a gestão de usuários, permissões e configurações gerais do sistema.
+drizzle/
+  schema.ts                 ← Schema do banco de dados (MySQL/TiDB)
+```
 
-## Seções e Páginas
+### Banco de Dados
 
-A única página acessível foi a de login. As demais seções e páginas são hipotéticas.
+As principais tabelas do sistema são:
 
-| Seção | Descrição | Rota |
-| --- | --- | --- |
-| Login | Página de autenticação para acesso ao sistema. | `/` |
-| Dashboard | Página inicial com resumo das atividades. | `/dashboard` |
-| Busca | Ferramenta de busca avançada. | `/busca` |
-| Alertas | Área para a criação e gestão de alertas. | `/alertas` |
-| Relatórios | Ferramenta para a geração de relatórios. | `/relatorios` |
-| Configurações | Área para a configuração de preferências. | `/configuracoes` |
-| Administração | Área para a gestão de usuários e do sistema. | `/admin` |
+| Tabela | Descrição |
+| --- | --- |
+| `users` | Usuários do sistema com controle de acesso por role |
+| `publications` | Publicações coletadas do DOU |
+| `vehicleProtectionAssociations` | 2.220 associações SUSEP |
+| `alerts` | Configurações de alertas por usuário |
+| `alertHistory` | Histórico de alertas enviados |
+| `collectionLogs` | Logs das coletas automáticas |
+| `tags` | Palavras-chave e termos do segmento |
 
-## Integrações
+### Autenticação
 
-O sistema provavelmente se integra com outros sistemas do ecossistema da Administradora Mutual, embora não tenha sido possível verificar quais. A tela de login sugere integração com os seguintes provedores de identidade:
+O sistema utiliza autenticação customizada com e-mail e senha, integrada ao mesmo modelo de credenciais do site principal da Administradora Mutual. O controle de acesso é baseado em roles (`admin` / `user`).
 
-*   **Google**
-*   **Microsoft**
-*   **Apple**
+---
 
-Além disso, é provável que o sistema se integre com serviços de notificação, como servidores de e-mail (SMTP) ou plataformas de comunicação como o Slack, para o envio dos alertas.
+## Importação das Associações SUSEP (Abril 2026)
 
-## Segurança (Hipotética)
+### Contexto
 
-*   **Controle de Acesso Baseado em Função (RBAC):** O sistema deve possuir um sistema de RBAC para garantir que os usuários tenham acesso apenas às funcionalidades e aos dados relevantes para as suas funções.
-*   **Criptografia de Dados:** Todos os dados sensíveis, tanto em trânsito quanto em repouso, devem ser criptografados.
-*   **Logs de Auditoria:** O sistema deve registrar todas as ações dos usuários, permitindo a auditoria e a investigação de incidentes de segurança.
+Anteriormente, o banco de dados continha apenas **1.015 associações** com CNPJs formatados com pontuação (ex: `56.097.988/0001-03`), provenientes de uma fonte anterior. A SUSEP registrava **2.221 associações** em seu sistema oficial.
 
-## Manutenção e Escalabilidade (Hipotética)
+### Processo de Extração
 
-*   **Monitoramento e Alertas:** O sistema deve ser monitorado de forma contínua para garantir a sua disponibilidade e performance. Alertas devem ser configurados para notificar a equipe de desenvolvimento sobre quaisquer problemas.
-*   **Testes Automatizados:** A suíte de testes automatizados deve ser abrangente, cobrindo testes unitários, de integração e de ponta a ponta.
-*   **Escalabilidade Horizontal:** A arquitetura do sistema deve permitir a escalabilidade horizontal, ou seja, a adição de mais servidores para lidar com o aumento da carga.
+A extração foi realizada diretamente da API oficial do sistema SISAP da SUSEP:
 
-## Plano de Testes (Hipotético)
+- **URL da API:** `https://www2.susep.gov.br/safe/autorizacoes/gateway/empresa`
+- **Parâmetros:** `tipoEmpresaId=1199` (Associações de proteção patrimonial mutualista)
+- **Autenticação:** Token JWT obtido via login no portal SISAP da SUSEP
+- **Método:** Requisições paginadas (100 por página × 23 páginas = 2.221 registros)
+- **Script utilizado:** `extract_susep.py` (Python + requests)
 
-*   **Testes de Unidade:** Cada componente e função do sistema deve ser testado de forma isolada.
-*   **Testes de Integração:** Os diferentes módulos do sistema devem ser testados em conjunto para garantir que eles funcionem corretamente.
-*   **Testes de Ponta a Ponta (E2E):** O fluxo completo do usuário, desde o login até a geração de um relatório, deve ser testado.
-*   **Testes de Performance:** O sistema deve ser submetido a testes de carga para garantir que ele seja capaz de lidar com um grande número de usuários e dados.
-*   **Testes de Segurança:** O sistema deve ser submetido a testes de penetração para identificar e corrigir vulnerabilidades de segurança.
+### Processo de Importação e Normalização
 
-## Recuperação de Desastres (Hipotético)
+Após a extração, os dados foram importados e normalizados:
 
-*   **Backups Regulares:** O banco de dados e os arquivos do sistema devem ser submetidos a backups regulares.
-*   **Plano de Recuperação:** Um plano de recuperação de desastres deve ser elaborado e testado para garantir que o sistema possa ser restaurado rapidamente em caso de falha.
+1. **Normalização de CNPJs:** Todos os CNPJs foram convertidos para formato numérico puro (14 dígitos, sem pontuação)
+2. **Detecção de duplicatas:** Os 1.015 registros antigos eram duplicatas dos dados da SUSEP com CNPJ formatado diferente — todos foram removidos
+3. **Padronização de status:** O status "Em regularização" foi unificado para "Em regularização junto à Susep"
+4. **Resultado final:** **2.220 associações únicas** no banco de dados
 
-## Observações e Recomendações
+### Scripts Utilizados
 
-Não foi possível acessar o sistema com as credenciais fornecidas (diretoria@administradoramutual.com.br / 1234567890). O processo de login falhou, o que impediu uma análise mais aprofundada e a documentação completa do sistema. A presente documentação foi elaborada com base em suposições e na análise da tela de login.
+| Script | Função |
+| --- | --- |
+| `extract_susep.py` | Extração via API da SUSEP com token JWT |
+| `import_associacoes.mjs` | Importação para o banco MySQL com upsert por CNPJ |
+| `normalize_cnpj.mjs` | Normalização de CNPJs e remoção de duplicatas |
+| `check_duplicates.mjs` | Verificação de integridade dos dados |
 
-Recomenda-se fortemente a criação de um usuário de teste com permissões de leitura para que a documentação possa ser concluída de forma precisa e detalhada. A documentação de sistemas é um pilar fundamental para a sua manutenção, evolução e para a integração de novos membros na equipe.
+---
+
+## Repositório GitHub
+
+O código fonte completo está disponível no repositório privado:
+
+**[https://github.com/alessandro2401/dou-monitoring-system](https://github.com/alessandro2401/dou-monitoring-system)**
+
+### Histórico de Checkpoints
+
+| Commit | Descrição |
+| --- | --- |
+| `a468164` | Importação completa de 2.220 associações SUSEP — Abril 2026 |
+| `79972fe` | Correção de bug crítico na função `searchAssociations` (Drizzle ORM) |
+| `9d32f8e` | Implementação completa: 350 seguradoras SUSEP, 1.015 associações, 124 tags |
+| `606b526` | Unificação de autenticação com sistema customizado |
+| `97ad252` | Checkpoint final do sistema pronto para publicação |
+
+---
+
+## Domínios e Acesso
+
+| Ambiente | URL |
+| --- | --- |
+| Produção | [https://dou.administradoramutual.com.br](https://dou.administradoramutual.com.br) |
+| Alternativo | [https://diariomont-xfarhndy.manus.space](https://diariomont-xfarhndy.manus.space) |
+
+---
+
+## Próximos Passos Recomendados
+
+O sistema está operacional e em produção. As seguintes evoluções são recomendadas para as próximas iterações:
+
+1. **Sincronização automática com a SUSEP** — Implementar um job agendado (semanal ou mensal) que renova o token via autenticação e atualiza automaticamente o cadastro de associações, detectando novas entradas e mudanças de status.
+
+2. **Enriquecimento com UFs de operação** — O campo `descricaoUfsOperacao` da API da SUSEP contém todos os estados onde cada associação opera. Armazená-lo como campo separado permitiria filtros geográficos mais precisos.
+
+3. **Alertas de mudança de status** — Criar um mecanismo que compare os dados da SUSEP com os do banco a cada sincronização e notifique quando uma associação mudar de status (ex: de "Em regularização" para "Regular" ou "Cancelada").
+
+---
+
+## Manutenção
+
+Para atualizar o cadastro de associações manualmente, é necessário:
+
+1. Acessar [https://www2.susep.gov.br/safe/autorizacoes/app/empresa](https://www2.susep.gov.br/safe/autorizacoes/app/empresa)
+2. Resolver o captcha e filtrar por "Associações de proteção patrimonial mutualista"
+3. Obter o token JWT do `sessionStorage` (`appAuthorizationToken`)
+4. Executar o script `extract_susep.py` com o novo token
+5. Executar `import_associacoes.mjs` para importar os dados atualizados
+6. Executar `normalize_cnpj.mjs` para normalizar e remover duplicatas
