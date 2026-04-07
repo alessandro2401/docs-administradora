@@ -2,7 +2,7 @@
 
 Documentação técnica detalhada de todos os **23 sites e sistemas** que compõem o ecossistema digital da Administradora Mutual. Cada documento inclui informações sobre propósito, público-alvo, stack técnica, layout, funcionalidades, integrações e recomendações.
 
-**Última atualização:** 24 de Fevereiro de 2026
+**Última atualização:** 07 de Abril de 2026
 
 ## Resumo do Ecossistema
 
@@ -28,7 +28,7 @@ Documentação técnica detalhada de todos os **23 sites e sistemas** que compõ
 - [AURA Seguradora S4](./s4-aura-seguradora) — `s4.administradoramutual.com.br`
 - [Gestão de Salvados](./salvados) — `salvados.administradoramutual.com.br`
 - [POTERE Locadora — Aluguéis Ativos](./locadora-potere) — `locadora.administradoramutual.com.br`
-- [SOU — Sistema Operacional Unificado](./sou-sistema) — `sou.administradoramutual.com.br`
+- [SOU — Sistema de Organização Unificada](./sou-sistema) — `souorganize-huedqzb2.manus.space` (consolida 25+ sites)
 - [Due Diligence — Viabilidade de Carteira](./formulario-due-diligence) — `formulario.administradoramutual.com.br`
 
 ## POPs e Documentação
@@ -52,6 +52,6 @@ Documentação técnica detalhada de todos os **23 sites e sistemas** que compõ
 - [Dashboard Orçamentário 2026](./dashboard-orcamentario) — `grupommb2026.manus.space/estrutura`
 - [Monitoramento do Diário Oficial](./monitoramento-dou) — `diariomont-xfarhndy.manus.space`
 
-## Em Desenvolvimento
+## Integração Unificada
 
-- [Visão 360](./visao-360) — `360.administradoramutual.com.br` *(404 — Em breve)*
+- [Visão 360](./visao-360) — Integrado ao SOU em `/visao-360`

@@ -49,7 +49,7 @@ export default defineConfig({
             { text: 'AURA Seguradora S4', link: '/ecossistema/s4-aura-seguradora' },
             { text: 'Gestão de Salvados', link: '/ecossistema/salvados' },
             { text: 'POTERE Locadora', link: '/ecossistema/locadora-potere' },
-            { text: 'SOU — Sistema Unificado', link: '/ecossistema/sou-sistema' },
+            { text: 'SOU — Organização Unificada (25+ sites)', link: '/ecossistema/sou-sistema' },
             { text: 'Due Diligence', link: '/ecossistema/formulario-due-diligence' },
           ]
         },
@@ -84,10 +84,10 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Em Desenvolvimento',
+          text: 'Integração Unificada',
           collapsed: false,
           items: [
-            { text: 'Visão 360', link: '/ecossistema/visao-360' },
+            { text: 'Visão 360 (integrado ao SOU)', link: '/ecossistema/visao-360' },
           ]
         },
       ],
@@ -118,7 +118,7 @@ export default defineConfig({
           items: [
             { text: 'Portal de Sistemas', link: '/sistemas-internos/portal' },
             { text: 'Gestão de Salvados', link: '/sistemas-internos/salvados' },
-            { text: 'SOU - Sistema Operacional Unificado', link: '/sistemas-internos/sou' },
+            { text: 'SOU — Organização Unificada', link: '/sistemas-internos/sou' },
             { text: 'Visão 360º', link: '/sistemas-internos/visao-360' },
             { text: 'Gestão de Sites', link: '/sistemas-internos/gestao-sites' },
             { text: 'Gestão de Sinistros (POP)', link: '/sistemas-internos/sinistros' },
