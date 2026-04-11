@@ -5,7 +5,12 @@ export default defineConfig({
   description: 'Portal de documentação centralizado para todos os sites, sistemas e processos da Administradora Mutual.',
   ignoreDeadLinks: true,
   cleanUrls: true,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+  ],
   themeConfig: {
+    logo: '/favicon.svg',
+    siteTitle: 'Administradora Mutual',
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Ecossistema', link: '/ecossistema/' },
