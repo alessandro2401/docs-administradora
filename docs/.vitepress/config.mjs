@@ -117,6 +117,7 @@ export default defineConfig({
           text: 'Sistemas Internos',
           items: [
             { text: 'Portal de Sistemas', link: '/sistemas-internos/portal' },
+            { text: 'Dashboard Orçamentário 2026', link: '/sistemas-internos/dashboard-orcamentario' },
             { text: 'Gestão de Salvados', link: '/sistemas-internos/salvados' },
             { text: 'SOU — Organização Unificada', link: '/sistemas-internos/sou' },
             { text: 'Visão 360º', link: '/sistemas-internos/visao-360' },

@@ -2,7 +2,7 @@
 
 Documentação técnica detalhada de todos os **23 sites e sistemas** que compõem o ecossistema digital da Administradora Mutual. Cada documento inclui informações sobre propósito, público-alvo, stack técnica, layout, funcionalidades, integrações e recomendações.
 
-**Última atualização:** 07 de Abril de 2026
+**Última atualização:** 11 de Abril de 2026
 
 ## Resumo do Ecossistema
 
@@ -49,7 +49,7 @@ Documentação técnica detalhada de todos os **23 sites e sistemas** que compõ
 ## Dashboards e Painéis Estratégicos
 
 - [Grupo MMB — Hub Administrativo](./grupo-mmb-hub) — `grupommb.administradoramutual.com.br`
-- [Dashboard Orçamentário 2026](./dashboard-orcamentario) — `grupommb2026.manus.space/estrutura`
+- [Dashboard Orçamentário 2026](./dashboard-orcamentario) — `grupommb2026.manus.space` — **Repositório:** [GitHub](https://github.com/alessandro2401/dashboard-orcamento-2026) — Backup completo: 6.228+ registros
 - [Monitoramento do Diário Oficial](./monitoramento-dou) — `diariomont-xfarhndy.manus.space`
 
 ## Integração Unificada
